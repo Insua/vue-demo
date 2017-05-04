@@ -4,7 +4,8 @@ import Router from 'vue-router'
 // import Text from '@/components/Text'
 // import VOnce from '@/components/VOnce'
 // import PureHtml from '@/components/PureHtml'
-import Bind from '@/components/Bind'
+// import Bind from '@/components/Bind'
+import JsExpression from '@/components/JsExpression'
 
 Vue.use(Router)
 
@@ -12,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Bind',
-      component: Bind
+      name: 'JsExpression',
+      component: JsExpression
     }
   ]
 })
