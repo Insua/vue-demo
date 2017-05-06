@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+      <div>
+          <my-button @click.native="buttonClick"></my-button>
+      </div>
+    <!--<router-view></router-view>-->
   </div>
 </template>
 
 <script>
+    import myButton from './components/Modifiers.vue'
 export default {
-  name: 'app'
+  name: 'app',
+    components: {
+      myButton
+    },
+    methods: {
+      buttonClick(){
+          alert('点击原生');
+      }
+    }
 }
 </script>
 
