@@ -6,7 +6,8 @@ import Router from 'vue-router'
 // import PureHtml from '@/components/PureHtml'
 // import Bind from '@/components/Bind'
 // import JsExpression from '@/components/JsExpression'
-import Filter from '@/components/Filter'
+// import Filter from '@/components/Filter'
+import FilterAndBind from '@/components/FilterAndBind'
 
 Vue.use(Router)
 
@@ -14,8 +15,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Filter',
-      component: Filter
+      name: 'FilterAnaBind',
+      component: FilterAndBind
     }
   ]
 })
