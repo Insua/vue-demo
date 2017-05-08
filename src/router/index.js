@@ -7,7 +7,8 @@ import Router from 'vue-router'
 // import Bind from '@/components/Bind'
 // import JsExpression from '@/components/JsExpression'
 // import Filter from '@/components/Filter'
-import FilterAndBind from '@/components/FilterAndBind'
+// import FilterAndBind from '@/components/FilterAndBind'
+import ArrayRender from '@/components/ArrayRender'
 
 Vue.use(Router)
 
@@ -15,8 +16,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'FilterAnaBind',
-      component: FilterAndBind
+      name: 'ArrayRender',
+      component: ArrayRender
     }
   ]
 })
