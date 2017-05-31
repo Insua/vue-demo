@@ -1,5 +1,9 @@
 <template>
-
+    <div>
+        <template v-for="s in stories">
+            <p>{{ s.title }}</p>
+        </template>
+    </div>
 </template>
 
 <script>
@@ -10,9 +14,9 @@
             }
         },
         created () {
-            this.$http.get('/zhihu-daily-latest').then(function(response)
+            this.$http.get('/latest').then(function(response)
             {
-                console.log(response.data);
+                this.stories = response.data.stories;
             })
         }
     }

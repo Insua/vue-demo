@@ -28,11 +28,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/zhihu-daily-latest': {
+        '/latest': {
             target: 'http://news-at.zhihu.com/api/4/news/latest',
             changeOrigin: true,
             pathRewrite: {
-                '/zhihu-daily-latest': ''
+                '/latest': ''
             }
         }
     },
