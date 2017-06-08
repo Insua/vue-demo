@@ -14,6 +14,7 @@ import Routes from '@/components/Routes'
 import TemplateVFor from '@/components/TemplateVFor'
 import VForObject from '@/components/VForObject'
 import ZhihuDaily from '@/components/ZhihuDaily'
+import ComponentVFor from '@/components/ComponentVFor'
 
 Vue.use(Router);
 Vue.use(VueResoure);
@@ -38,6 +39,10 @@ export default new Router({
       {
           path: '/zhihu-daily',
           component: ZhihuDaily
+      },
+      {
+          path: '/component-v-for',
+          component: ComponentVFor
       }
   ]
 })
