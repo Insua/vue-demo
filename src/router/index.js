@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import VueResoure from 'vue-resource'
+import VueResource from 'vue-resource'
 import Routes from '@/components/Routes'
 // import Hello from '@/components/Hello'
 // import Text from '@/components/Text'
@@ -17,7 +17,7 @@ import ZhihuDaily from '@/components/ZhihuDaily'
 import ComponentVFor from '@/components/ComponentVFor'
 
 Vue.use(Router);
-Vue.use(VueResoure);
+Vue.use(VueResource);
 
 export default new Router({
   routes: [

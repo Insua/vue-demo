@@ -11,12 +11,14 @@
         <button @click="contact">数组进行合并</button>
         <button @click="map">数组映射</button>
         <button @click="slice">返回截取后的数组</button>
+        <button @click="change3">改变数组第三个值</button>
+        <button @click="change4">去除</button>
     </div>
 </template>
 
 <script>
     import myArticle from "./MyArticle.vue"
-
+    import Vue from 'vue'
     export default {
         components: {
             myArticle
@@ -76,11 +78,17 @@
             },
             map () {
                 this.artList = this.artList.map(item => {
-                    return `${item} map`
+                    return {name: `${item.name} map`};
                 })
             },
             slice() {
                 this.artList = this.artList.slice(2);
+            },
+            change3 () {
+                Vue.set(this.artList,1,{name: 'cloud'})
+            },
+            change4 () {
+                this.artList.splice(1,1,5);
             }
         }
     }
