@@ -15,6 +15,7 @@ import TemplateVFor from '@/components/TemplateVFor'
 import VForObject from '@/components/VForObject'
 import ZhihuDaily from '@/components/ZhihuDaily'
 import ComponentVFor from '@/components/ComponentVFor'
+import FilterAndOrder from '@/components/FilterAndOrder'
 
 Vue.use(Router);
 Vue.use(VueResource);
@@ -43,6 +44,10 @@ export default new Router({
       {
           path: '/component-v-for',
           component: ComponentVFor
+      },
+      {
+          path: '/filter-and-order',
+          component: FilterAndOrder
       }
   ]
 })
